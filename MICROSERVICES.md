@@ -10,7 +10,6 @@ This project has been extended from the original bhvr template to include a micr
 
 - **API Gateway** (`server`) - Port 3000 - Routes requests to appropriate services
 - **User Service** (`server1`) - Port 3001 - Manages user data and authentication  
-- **Product Service** (`server2`) - Port 3002 - Manages product catalog
 - **Client** (`client`) - React frontend application
 - **Shared** (`shared`) - Common types and utilities
 
@@ -33,16 +32,6 @@ Manages user-related operations with mock data.
 - `GET /api/users` - Get all users
 - `GET /api/users/:id` - Get user by ID
 - `POST /api/users` - Create new user
-
-### Product Service (Port 3002)
-Manages product catalog operations with mock data.
-
-**Endpoints:**
-- `GET /health` - Health check
-- `GET /api/products` - Get all products
-- `GET /api/products/:id` - Get product by ID
-- `GET /api/products/category/:category` - Get products by category
-- `POST /api/products` - Create new product
 
 ## Quick Start
 

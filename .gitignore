@@ -19,6 +19,7 @@ build
 .env.test.local
 .env.production.local
 .env*.local
+*db
 
 # logs
 npm-debug.log*
