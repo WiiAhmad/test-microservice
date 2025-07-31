@@ -30,6 +30,18 @@
         "VITE_*"
       ]
     },
+    "start": {
+      "dependsOn": [
+        "^build"
+      ],
+      "cache": false,
+      "persistent": true,
+      "env": [
+        "NODE_ENV",
+        "PORT",
+        "VITE_*"
+      ]
+    },
     "dev": {
       "cache": false,
       "persistent": true,

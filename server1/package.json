@@ -5,6 +5,7 @@
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc",
+        "start": "bun run dist/index.js",
         "dev": "bun --watch run src/index.ts",
         "db:generate": "prisma generate",
         "db:push": "prisma db push",

@@ -19,6 +19,7 @@
     "dev:server1": "turbo dev --filter=server1",
     "dev:all-servers": "turbo dev --filter=server --filter=server1",
     "build": "turbo build",
+    "start": "turbo start",
     "build:client": "turbo build --filter=client",
     "build:server": "turbo build --filter=server",
     "build:server1": "turbo build --filter=server1",
