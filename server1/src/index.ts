@@ -10,7 +10,11 @@ app.use(cors())
 app.use(timing())
 
 app.get('/', (c) => {
-    return c.text('User Service - Port 3001')
+    const response: ApiResponse = {
+        message: 'User Service - Port 3001',
+        success: true
+    }
+    return c.json(response)
 })
 
 app.get('/health', async (c) => {
