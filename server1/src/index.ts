@@ -3,10 +3,12 @@ import { cors } from 'hono/cors'
 import { timing } from 'hono/timing'
 import type { ApiResponse } from 'shared/dist'
 import { prisma } from './lib/prisma'
+import { logger } from 'hono/logger'
 
 const app = new Hono()
 
 app.use(cors())
+app.use(logger())
 app.use(timing())
 
 app.get('/', (c) => {

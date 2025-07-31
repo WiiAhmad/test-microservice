@@ -9,6 +9,12 @@ This is a **microservices monorepo** built with Bun, Hono, Prisma, React, and Tu
 - **React Client** (`client/`) - Vite + React with shadcn/ui components
 - **Shared Types** (`shared/`) - Common TypeScript types across all services
 
+### Client
+The React Client is built with Vite and uses shadcn/ui all components already installed in folder `src/components/ui/`.
+if needed, additional components can be created in this folder components.
+
+if needed can use context7 for codebase react, react-router v7 datamode and shadcn/ui
+
 ## Key Development Patterns
 
 ### Service Structure
