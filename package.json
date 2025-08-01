@@ -23,7 +23,7 @@
     "build:client": "turbo build --filter=client",
     "build:server": "turbo build --filter=server",
     "build:server1": "turbo build --filter=server1",
-    "db:setup": "bun run db:generate:all && bun run db:push:all",
+    "db:setup": "bun run db:generate:all && bun run db:push:all && bun run db:seed:all",
     "db:generate:all": "cd server && bun run db:generate && cd ../server1 && bun run db:generate",
     "db:push:all": "cd server && bun run db:push && cd ../server1 && bun run db:push",
     "db:seed:all": "cd server && bun run db:seed && cd ../server1 && bun run db:seed",
