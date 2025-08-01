@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useRouteLoaderData } from 'react-router'
+import { useRouteLoaderData, Link } from 'react-router'
 import beaver from '../../assets/beaver.svg'
 import { ApiResponse } from 'shared'
 import { Button } from '../../components/ui/button'
@@ -141,6 +141,16 @@ export default function HomePage() {
             <h1 className="text-5xl font-black">bhvr</h1>
             <h2 className="text-2xl font-bold">Bun + Hono + Vite + React</h2>
             <p>A typesafe fullstack monorepo with microservices</p>
+
+            {/* Authentication Links */}
+            <div className="flex gap-4 justify-center">
+                <Button asChild variant="outline">
+                    <Link to="/auth/login">Login</Link>
+                </Button>
+                <Button asChild variant="outline">
+                    <Link to="/auth/register">Register</Link>
+                </Button>
+            </div>
 
             {/* Service Controls */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">

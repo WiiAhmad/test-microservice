@@ -1,5 +1,8 @@
 import RootLayout from './layout';
 import HomePage from './pages/home/HomePage';
+import AuthLayout from './pages/auth/AuthLayout';
+import LoginPage from './pages/auth/LoginPage';
+import RegisterPage from './pages/auth/RegisterPage';
 
 // API Configuration
 const API_GATEWAY_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:3000";
@@ -25,6 +28,20 @@ export const routes = [
             {
                 index: true,
                 Component: HomePage,
+            },
+            {
+                path: "auth",
+                Component: AuthLayout,
+                children: [
+                    {
+                        path: "login",
+                        Component: LoginPage,
+                    },
+                    {
+                        path: "register",
+                        Component: RegisterPage,
+                    },
+                ],
             },
             // Add more routes here as your app grows
             // {
