@@ -18,7 +18,7 @@ export function LoginForm({
             <Card className="overflow-hidden p-0">
                 <CardContent className="grid p-0 md:grid-cols-2">
                     <form className="p-6 md:p-8">
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-4">
                             <div className="flex flex-col items-center text-center">
                                 <div className="flex items-center justify-between w-full mb-4">
                                     <Button variant="ghost" size="sm" asChild>
