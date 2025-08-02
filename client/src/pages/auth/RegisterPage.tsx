@@ -56,7 +56,7 @@ export function RegisterForm({
                                     </TabsTrigger>
                                 </TabsList>
 
-                                <TabsContent value="basic" className="mt-6">
+                                <TabsContent value="basic" className="mt-4">
                                     <div className="grid gap-4">
                                         <div className="grid gap-3">
                                             <Label htmlFor="name">Full Name</Label>
@@ -67,21 +67,12 @@ export function RegisterForm({
                                                 required
                                             />
                                         </div>
-                                        <div className="grid gap-3">
+                                        <div className="grid gap-3 mb-2">
                                             <Label htmlFor="email">Email</Label>
                                             <Input
                                                 id="email"
                                                 type="email"
                                                 placeholder="m@example.com"
-                                                required
-                                            />
-                                        </div>
-                                        <div className="grid gap-3">
-                                            <Label htmlFor="username">Username</Label>
-                                            <Input
-                                                id="username"
-                                                type="text"
-                                                placeholder="johndoe"
                                                 required
                                             />
                                         </div>
@@ -91,7 +82,7 @@ export function RegisterForm({
                                     </div>
                                 </TabsContent>
 
-                                <TabsContent value="password" className="mt-6">
+                                <TabsContent value="password" className="mt-4">
                                     <div className="grid gap-4">
                                         <div className="grid gap-3">
                                             <Label htmlFor="password">Password</Label>

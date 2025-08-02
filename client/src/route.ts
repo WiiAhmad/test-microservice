@@ -1,8 +1,11 @@
 import RootLayout from './layout';
 import HomePage from './pages/home/HomePage';
+import NotFoundPage from './pages/home/NotFoundPage';
 import AuthLayout from './pages/auth/AuthLayout';
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
+import DashboardLayout from './pages/dashboard/DashboardLayout';
+import DashboardPage from './pages/dashboard/DashboardPage';
 
 // API Configuration
 const API_GATEWAY_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:3000";
@@ -43,6 +46,25 @@ export const routes = [
                     },
                 ],
             },
+            {
+                path: "dashboard",
+                Component: DashboardLayout,
+                children: [
+                    {
+                        index: true,
+                        Component: DashboardPage,
+                    },
+                    // Add more dashboard sub-routes here
+                    // {
+                    //   path: "overview",
+                    //   Component: DashboardOverviewPage,
+                    // },
+                    // {
+                    //   path: "settings",
+                    //   Component: DashboardSettingsPage,
+                    // },
+                ],
+            },
             // Add more routes here as your app grows
             // {
             //   path: "about",
@@ -50,4 +72,8 @@ export const routes = [
             // },
         ],
     },
+    {
+        path: "*",
+        Component: NotFoundPage,
+    }
 ];
